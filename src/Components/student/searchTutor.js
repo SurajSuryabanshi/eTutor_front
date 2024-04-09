@@ -19,7 +19,7 @@ const Search = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/college/');
+        const response = await axios.get('https://etutor-back.onrender.com/api/college/');
         setColleges(response.data);
       } catch (error) {
         console.error('Error fetching colleges:', error);
@@ -34,19 +34,19 @@ const Search = () => {
     try {
       let response;
       if (selectedColleges.length === 0) {
-        response = await axios.get('http://localhost:5000/api/tutor/search', {
+        response = await axios.get('https://etutor-back.onrender.com/api/tutor/search', {
           params: {
             name: searchName,
           },
         });
       } else if (selectedColleges.length > 0 && searchName.trim() === '') {
-        response = await axios.get('http://localhost:5000/api/tutor/search', {
+        response = await axios.get('https://etutor-back.onrender.com/api/tutor/search', {
           params: {
             colleges: selectedColleges,
           },
         });
       } else {
-        response = await axios.get('http://localhost:5000/api/tutor/search', {
+        response = await axios.get('https://etutor-back.onrender.com/api/tutor/search', {
           params: {
             name: searchName,
             colleges: selectedColleges,
