@@ -100,7 +100,7 @@ const TutorTimetable = () => {
   const [error, setError] = useState(null);
   const [availabilities, setAvailabilities] = useState([]);
 
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/availability';
+  const API_URL = process.env.REACT_APP_API_URL || 'https://etutor-back.onrender.com/api/availability';
 
   const handleAvailabilitySubmit = async (formData) => {
     try {
