@@ -24,7 +24,7 @@ const ManageCollege = () => {
   const fetchColleges = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/admin/colleges', {
+      const response = await axios.get('https://etutor-back.onrender.com/api/admin/colleges', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -38,7 +38,7 @@ const ManageCollege = () => {
   const handleDelete = async (collegeId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/admin/colleges/${collegeId}`, {
+      await axios.delete(`https://etutor-back.onrender.com/api/admin/colleges/${collegeId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -52,7 +52,7 @@ const ManageCollege = () => {
   const handleEditCollege = async () => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5000/api/admin/colleges/${formData._id}`, formData, {
+      await axios.put(`https://etutor-back.onrender.com/api/admin/colleges/${formData._id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ const handleAddCollege = async (e) => {
           });
       }
       
-      const response = await fetch('http://localhost:5000/api/college/register', {
+      const response = await fetch('https://etutor-back.onrender.com/api/college/register', {
           method: 'POST',
           body: submissionData
       });
