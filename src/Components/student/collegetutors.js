@@ -16,7 +16,7 @@ const CollegeTutors = () => {
     const fetchCollegeDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/student/profile', {
+        const response = await axios.get('https://etutor-back.onrender.com/api/student/profile', {
           headers: {
             'Authorization': `Bearer ${token}`,
           },
@@ -25,7 +25,7 @@ const CollegeTutors = () => {
           throw new Error('College ID is undefined');
         }
         setCollegeId(response.data.student.college);
-        const collegeResponse = await axios.get(`http://localhost:5000/api/college/${response.data.student.college}`);
+        const collegeResponse = await axios.get(`https://etutor-back.onrender.com/api/college/${response.data.student.college}`);
         setCollegeName(collegeResponse.data.collegeName); // Set college name
       } catch (error) {
         console.error('Error fetching college details:', error);
@@ -38,7 +38,7 @@ const CollegeTutors = () => {
   useEffect(() => {
     const fetchCollegeTutors = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/college/${collegeId}/tutors`);
+        const response = await axios.get(`https://etutor-back.onrender.com/api/college/${collegeId}/tutors`);
         setTutors(response.data);
       } catch (error) {
         console.error('Error fetching college tutors:', error);
