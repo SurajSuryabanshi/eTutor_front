@@ -12,7 +12,7 @@ const MyCollegePage = () => {
     const fetchCollegeDetails = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await fetch('http://localhost:5000/api/student/profile', {
+        const response = await fetch('https://etutor-back.onrender.com/api/student/profile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const MyCollegePage = () => {
         if (!collegeId) {
           throw new Error('College ID is undefined');
         }
-        const collegeResponse = await fetch(`http://localhost:5000/api/college/${collegeId}`, {
+        const collegeResponse = await fetch(`https://etutor-back.onrender.com/api/college/${collegeId}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
