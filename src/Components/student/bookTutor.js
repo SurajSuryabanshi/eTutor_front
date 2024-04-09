@@ -17,7 +17,7 @@ const BookTutor = () => {
   useEffect(() => {
     const fetchTutorDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/tutor/tutor/${storedTutorId}`);
+        const response = await axios.get(`https://etutor-back.onrender.com/api/tutor/tutor/${storedTutorId}`);
         setTutor(response.data);
       } catch (error) {
         console.error('Error fetching tutor details:', error);
@@ -31,7 +31,7 @@ const BookTutor = () => {
 
   const fetchTutorAvailabilities = async (tutorId, selectedDate) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/availability/tutor/${tutorId}?date=${selectedDate}`);
+      const response = await axios.get(`https://etutor-back.onrender.com/api/availability/tutor/${tutorId}?date=${selectedDate}`);
       setAvailabilities(response.data);
     } catch (error) {
       console.error('Error fetching tutor availabilities:', error);
@@ -68,7 +68,7 @@ const BookTutor = () => {
       const studentId = decodedPayload.studentId; // Extract student ID from the decoded payload
       const session = selectedSlots[0]; // Assuming only one session is selected
 
-      await axios.post('http://localhost:5000/api/booking/book', {
+      await axios.post('https://etutor-back.onrender.com/api/booking/book', {
         tutorId: storedTutorId,
         studentId: studentId, // Use the extracted student ID
         sessionDate: selectedDate,
