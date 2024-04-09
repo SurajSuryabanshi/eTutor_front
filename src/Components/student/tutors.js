@@ -13,7 +13,7 @@ const StudentTutorsPage = () => {
     useEffect(() => {
         const fetchTutors = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/tutor/tutors');
+                const response = await axios.get('https://etutor-back.onrender.com/api/tutor/tutors');
                 setTutors(response.data);
             } catch (error) {
                 console.error('Error fetching tutors:', error);
