@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 
-import LoginForm from './Sign-in/loginform.js';
-import RegisterCollege from './Sign-in/register-college.js';
-import RegisterTutor from './Sign-in/register-tutor.js';
-import RegisterStudent from './Sign-in/register-student.js';
+import LoginForm from './sign-in/loginform.js';
+import RegisterCollege from './sign-in/register-college.js';
+import RegisterTutor from './sign-in/register-tutor.js';
+import RegisterStudent from './sign-in/register-student.js';
 import TutorProfile from './Components/tutor/profileTutor.js';
 import TutorDashboard from './Components/tutor/dashboard.js'
 import TutorTimetable from './Components/tutor/time-table.js'
@@ -14,7 +14,7 @@ import College from './Components/student/mycollege.js';
 import CollegeTutors from './Components/student/collegetutors.js';
 import TutorList from './Components/student/tutors.js';
 import StudentProfile from './Components/student/profiletudent.js';
-import BookTutor from './Components/student/bookTutor.js';
+import BookTutor from './Components/student/booktutor.js';
 import ManageStudent from './Components/admin/manageStudent.js';
 import ManageTutor from './Components/admin/manageTutor.js';
 import ManageCollege from './Components/admin/manageCollege.js';
@@ -48,4 +48,3 @@ function App() {
 }
 
 export default App;
-
