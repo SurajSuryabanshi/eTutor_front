@@ -1,0 +1,60 @@
+.register-college-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .register-college-form {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-college-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-college-form input[type="text"],
+  .register-college-form input[type="email"],
+  .register-college-form input[type="tel"],
+  .register-college-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .register-college-form input[type="file"] {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .register-college-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-college-form button:hover {
+    background-color: #555;
+  }
+  
+  .register-college-form textarea {
+    height: 100px; /* Adjust height as needed */
+  }
+  

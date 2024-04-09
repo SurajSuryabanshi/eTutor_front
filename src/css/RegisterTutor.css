@@ -1,0 +1,70 @@
+.register-tutor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .register-tutor-form {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-tutor-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-tutor-form input,
+  .register-tutor-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .register-tutor-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-tutor-form button:hover {
+    background-color: #555;
+  }
+  
+  .profile-pic-label {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #profile-pic-upload {
+    display: none;
+  }
+  
+  /* Additional global styles for your layout */
+  body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Adjustments for the logo */
+  .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px; /* Adjust as needed */
+  }
+  

@@ -1,0 +1,85 @@
+.register-student-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .register-student-form {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-student-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-student-form input,
+  .register-student-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .register-student-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-student-form button:hover {
+    background-color: #555;
+  }
+  
+  .profile-pic-label {
+    display: block;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  }
+  
+  .profile-pic-label::after {
+  content: 'Upload';
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  }
+  
+  /* Placeholder for the file input */
+  #profile-pic-upload {
+  display: none;
+  }
+  
+  /* Additional global styles for your layout */
+  body {
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+  }
+  
+  /* Adjustments for the logo /
+  .logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 120px;} / Adjust as needed */
+  

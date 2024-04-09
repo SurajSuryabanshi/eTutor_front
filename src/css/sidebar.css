@@ -1,0 +1,27 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  background-color: #f0f0f0; /* Background color for the sidebar */
+  overflow-y: auto; /* Enable scrolling if the content is longer than the sidebar */
+  padding-top: 20px; /* Add padding to the top */
+  z-index: 1; /* Ensure sidebar is behind main content */
+}
+
+.sidebar-logo {
+  text-align: center; /* Center the logo */
+  margin-bottom: 20px; /* Add some space below the logo */
+}
+
+.sidebar-logo img {
+  width: 80%; /* Adjust the width of the logo as needed */
+}
+
+.main-content {
+  position: relative; /* Ensure main content is positioned relative to the page */
+  z-index: 2; /* Ensure main content is above sidebar */
+  margin-left: 220px; /* Adjust based on sidebar width */
+  padding: 20px; /* Add padding to the main content area */
+}

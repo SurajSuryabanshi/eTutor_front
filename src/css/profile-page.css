@@ -1,0 +1,71 @@
+.profile-container {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  border-right: 1px solid #ccc;
+}
+
+aside nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+aside nav ul li.active a {
+  background-color: #007bff;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  width: 900px; /* Added 'px' unit for width */
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  background-color: #f3f3f3; /* Placeholder for profile picture */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+  padding: 12px; /* Increased padding */
+  margin-top: 5px;
+  font-size: 16px; /* Increased font size */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}

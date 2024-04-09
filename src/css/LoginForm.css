@@ -1,0 +1,144 @@
+/* LoginForm.css */
+
+form {
+    width: 300px; /* Adjust width as necessary */
+    margin: 50px auto; /* Center form in the page */
+    padding: 20px;
+    border: 1px solid #000; /* Basic black border */
+    border-radius: 5px; /* Slightly rounded corners for the form */
+    
+  }
+  
+  label {
+    display: block; /* Make labels take up the full width */
+    margin-bottom: 5px; /* Add some space below the label */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%; /* Full width of the form */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between each field */
+    border: 1px solid #ccc; /* Lighter border for inputs */
+    border-radius: 3px; /* Slightly rounded corners for inputs and buttons */
+  }
+  .register-buttons {
+    text-align: center; /* Center the buttons container */
+    margin-top: 20px; /* Add some space above the buttons container */
+  }
+  
+  button[type="button"] {
+    display: inline-block; /* Align buttons side by side */
+    width: calc(33% - 10px); /* Split the width between buttons, subtracting the margin */
+    padding: 10px; /* Padding inside the buttons */
+    margin: 0 5px; /* Add margin to the left and right of each button */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  /* No margin for the first button */
+  button[type="button"]:first-child {
+    margin-left: 0;
+  }
+  
+  /* No margin for the last button */
+  button[type="button"]:last-child {
+    margin-right: 0;
+  }
+  
+  button {
+    background-color: #f8f8f8; /* Light grey background */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for a smoother background color change */
+  }
+  
+  button:hover {
+    background-color: #e7e7e7; /* Slightly darker grey on hover */
+  }
+  
+  /* If you have a specific font family or color in mind, set them here */
+  body {
+    font-family: Arial, sans-serif; /* Example font */
+  }
+  
+  /* Adjust the layout of buttons for registration */
+  button[type="button"] {
+    display: inline-block; /* Align buttons side by side */
+    width: auto; /* Auto width for content inside */
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  /* Remove margin for the last button */
+  button[type="button"]:last-child {
+    margin-right: 0;
+  }
+  
+  /* Logo and Header styles */
+  header {
+    text-align: center; /* Center the logo and header */
+    padding: 10px 0; /* Padding above and below the header */
+  }
+  
+  .logo {
+    width: 50px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* LoginForm.css */
+
+/* Existing styles... */
+
+input[type="text"],
+input[type="password"] {
+  width: 80%; /* Full width of the form */
+  padding: 10px;
+  margin-bottom: 20px; /* Space between each field */
+  border: 1px solid #ccc; /* Lighter border for inputs */
+  border-radius: 3px; /* Slightly rounded corners for inputs */
+}
+
+/* Style for the login button */
+button[type="submit"] {
+  width: 100%; /* Full width of the form */
+  padding: 10px;
+  margin-bottom: 20px; /* Space between each field */
+  border: 1px solid #ccc; /* Lighter border for button */
+  border-radius: 3px; /* Slightly rounded corners for button */
+  background-color: #f8f8f8; /* Light grey background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for a smoother background color change */
+}
+
+button[type="submit"]:hover {
+  background-color: #6ee361; /* Slightly darker grey on hover */
+}
+
+/* Register buttons container */
+.register-buttons {
+  text-align: center; /* Center the buttons container */
+  margin-top: 20px; /* Add some space above the buttons container */
+}
+
+/* Specific styles for register buttons */
+button[type="button"] {
+  display: inline-block; /* Align buttons side by side */
+  width: calc(33% - 14px); /* Split the width between buttons, subtracting the margins */
+  padding: 10px; /* Padding inside the buttons */
+  margin: 0 5px; /* Add margin to the left and right of each button */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  background-color: rgb(11, 255, 255);
+}
+button[type="button"]:hover {
+  background-color: red; /* Red color on hover */
+}
+
+/* No margin for the first button */
+button[type="button"]:first-child {
+  margin-left: 0;
+}
+
+/* No margin for the last button */
+button[type="button"]:last-child {
+  margin-right: 0;
+}
+

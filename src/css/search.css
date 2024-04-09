@@ -1,0 +1,44 @@
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input,
+  .college-select,
+  .search-button {
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    width: 10px;/* The input will take up all available space */
+  }
+  
+  .college-select {
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .search-button {
+    width: 100px; /* Adjust width as needed */
+  }
+  .search-criteria-line {
+    align-content: center;
+    margin-top: 20px; /* Adjust as needed */
+    border-top: 2px solid #333; /* Example border color */
+    padding-top: 10px; /* Adjust as needed */
+    font-weight: bold;
+  }
+  .search-results-container {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+  }
+  
+  .search-results-line {
+    border-top: 1px solid #000;
+    flex-grow: 1;
+  }
+  
+  .search-results-heading {
+    margin: 0 20px;
+  }
+  
