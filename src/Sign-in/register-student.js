@@ -21,7 +21,7 @@ function RegisterStudent() {
     // Fetch colleges from backend API
     const fetchColleges = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/college');
+        const response = await axios.get('https://etutor-back.onrender.com/api/college');
         setColleges(response.data);
       } catch (error) {
         console.error('Error fetching colleges:', error);
