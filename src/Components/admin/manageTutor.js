@@ -30,7 +30,7 @@ const ManageTutor = () => {
     // Fetch colleges from backend API
     const fetchColleges = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/college');
+        const response = await axios.get('https://etutor-back.onrender.com/api/college');
         setColleges(response.data);
         console.log('Fetched Tutors:', response.data.tutors);
       } catch (error) {
@@ -44,7 +44,7 @@ const ManageTutor = () => {
   const fetchTutors = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/admin/tutors', {
+      const response = await axios.get('https://etutor-back.onrender.com/api/admin/tutors', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -58,7 +58,7 @@ const ManageTutor = () => {
   const handleDelete = async (tutorId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/admin/tutors/${tutorId}`, {
+      await axios.delete(`https://etutor-back.onrender.com/api/admin/tutors/${tutorId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -74,7 +74,7 @@ const ManageTutor = () => {
     try {
       const token = localStorage.getItem('token');
 
-      await axios.put(`http://localhost:5000/api/admin/tutors/${formData._id}`, formData, {
+      await axios.put(`https://etutor-back.onrender.com/api/admin/tutors/${formData._id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -131,7 +131,7 @@ const ManageTutor = () => {
       if (formData.profilePic) {
         submissionData.append('profilePicture', formData.profilePic);
       }
-      const response = await axios.post('http://localhost:5000/api/tutor/register', submissionData, {
+      const response = await axios.post('https://etutor-back.onrender.com/api/tutor/register', submissionData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
