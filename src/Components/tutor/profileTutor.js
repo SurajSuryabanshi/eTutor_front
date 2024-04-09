@@ -22,7 +22,7 @@ const TutorProfile = () => {
     const fetchProfile = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await fetch('http://localhost:5000/api/tutor/profile', {
+        const response = await fetch('https://etutor-back.onrender.com/api/tutor/profile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const TutorProfile = () => {
         }
   
         const token = localStorage.getItem('token');
-        await axios.put('http://localhost:5000/api/tutor/profile', data, {
+        await axios.put('https://etutor-back.onrender.com/api/tutor/profile', data, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,
@@ -91,7 +91,7 @@ const TutorProfile = () => {
     if (confirmation) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete('http://localhost:5000/api/tutor/profile', {
+        await axios.delete('https://etutor-back.onrender.com/api/tutor/profile', {
           headers: {
             'Authorization': `Bearer ${token}`,
           },
