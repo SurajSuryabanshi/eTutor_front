@@ -20,7 +20,7 @@ const UserProfile = () => {
     const fetchProfile = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await fetch('http://localhost:5000/api/student/profile', {
+        const response = await fetch('https://etutor-back.onrender.com/api/student/profile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const UserProfile = () => {
         formData.append('lastName', profile.lastName);
         formData.append('email', profile.email);
         formData.append('phoneNumber', profile.phoneNumber);
-        await axios.put('http://localhost:5000/api/student/profile', formData, {
+        await axios.put('https://etutor-back.onrender.com/api/student/profile', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
             'Authorization': `Bearer ${token}`,
@@ -80,7 +80,7 @@ const UserProfile = () => {
     if (confirmation) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete('http://localhost:5000/api/student/profile', {
+        await axios.delete('https://etutor-back.onrender.com/api/student/profile', {
           headers: {
             'Authorization': `Bearer ${token}`,
           },
