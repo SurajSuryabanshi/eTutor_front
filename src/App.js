@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 
-import LoginForm from './sign-in/loginform.js';
-import RegisterCollege from './sign-in/register-college.js';
-import RegisterTutor from './sign-in/register-tutor.js';
-import RegisterStudent from './sign-in/register-student.js';
+import LoginForm from './Sign-in/loginform.js';
+import RegisterCollege from './Sign-in/register-college.js';
+import RegisterTutor from './Sign-in/register-tutor.js';
+import RegisterStudent from './Sign-in/register-student.js';
 import TutorProfile from './Components/tutor/profileTutor.js';
 import TutorDashboard from './Components/tutor/dashboard.js'
 import TutorTimetable from './Components/tutor/time-table.js'
