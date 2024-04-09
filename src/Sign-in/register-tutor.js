@@ -22,7 +22,7 @@ function RegisterTutor() {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/college');
+        const response = await axios.get('https://etutor-back.onrender.com/api/college');
         setColleges(response.data);
       } catch (error) {
         console.error('Error fetching colleges:', error);
@@ -56,7 +56,7 @@ function RegisterTutor() {
       submissionData.append('profilePicture', formData.profilePic);
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/tutor/register', submissionData, {
+      const response = await axios.post('https://etutor-back.onrender.com/api/tutor/register', submissionData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
