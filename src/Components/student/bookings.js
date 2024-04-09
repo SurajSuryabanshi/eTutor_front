@@ -9,7 +9,7 @@ const BookingsPage = () => {
       const fetchBookings = async () => {
           try {
               const token = localStorage.getItem('token');
-              const response = await axios.get('http://localhost:5000/api/student/bookings', {
+              const response = await axios.get('https://etutor-back.onrender.com/api/student/bookings', {
                   headers: {
                       Authorization: `Bearer ${token}`,
                   },
