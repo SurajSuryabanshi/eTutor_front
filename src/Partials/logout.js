@@ -1,6 +1,6 @@
 export const logout = async () => {
   try {
-    let response = await fetch('http://localhost:5000/api/student/logout', { method: 'GET' })
+    let response = await fetch('https://etutor-back.onrender.com/api/student/logout', { method: 'GET' })
     return await response.json()
   } catch(err) {
     console.log(err)
