@@ -14,7 +14,7 @@ const ManageBookings = () => {
           throw new Error('Token not found in localStorage');
         }
   
-        const response = await axios.get('http://localhost:5000/api/admin/bookings', {
+        const response = await axios.get('https://etutor-back.onrender.com/api/admin/bookings', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -53,7 +53,7 @@ const ManageBookings = () => {
             throw new Error('Token not found in localStorage');
           }
     
-          await axios.delete(`http://localhost:5000/api/admin/bookings/${bookingId}`, {
+          await axios.delete(`https://etutor-back.onrender.com/api/admin/bookings/${bookingId}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
