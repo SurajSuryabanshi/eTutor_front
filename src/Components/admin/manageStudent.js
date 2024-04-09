@@ -25,7 +25,7 @@ const ManageStudent = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/college');
+        const response = await axios.get('https://etutor-back.onrender.com/api/college');
         setColleges(response.data);
       } catch (error) {
         console.error('Error fetching colleges:', error);
@@ -38,7 +38,7 @@ const ManageStudent = () => {
   const fetchStudents = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/admin/students', {
+      const response = await axios.get('https://etutor-back.onrender.com/api/admin/students', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -52,7 +52,7 @@ const ManageStudent = () => {
   const handleDelete = async (studentId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/admin/students/${studentId}`, {
+      await axios.delete(`https://etutor-back.onrender.com/api/admin/students/${studentId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -66,7 +66,7 @@ const ManageStudent = () => {
   const handleEditStudent = async () => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5000/api/admin/students/${formData._id}`, formData, {
+      await axios.put(`https://etutor-back.onrender.com/api/admin/students/${formData._id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
