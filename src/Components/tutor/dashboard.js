@@ -12,7 +12,7 @@ const TutorDashboard = () => {
   const fetchBookings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/tutor/bookings', {
+      const response = await axios.get('https://etutor-back.onrender.com/api/tutor/bookings', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -26,7 +26,7 @@ const TutorDashboard = () => {
   const handleDeleteBooking = async (bookingId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/tutor/bookings/${bookingId}`, {
+      await axios.delete(`https://etutor-back.onrender.com/api/tutor/bookings/${bookingId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
