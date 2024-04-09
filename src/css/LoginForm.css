@@ -104,12 +104,14 @@ button[type="submit"] {
   margin-bottom: 20px; /* Space between each field */
   border: 1px solid #ccc; /* Lighter border for button */
   border-radius: 3px; /* Slightly rounded corners for button */
-  background-color: #f8f8f8; /* Light grey background */
+  background-color:blue; /* Light grey background */
+  color: #e7e7e7;
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s; /* Transition for a smoother background color change */
 }
 
 button[type="submit"]:hover {
+  color: #000;
   background-color: #6ee361; /* Slightly darker grey on hover */
 }
 
