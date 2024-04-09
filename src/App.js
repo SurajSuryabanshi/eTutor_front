@@ -14,7 +14,7 @@ import College from './Components/student/mycollege.js';
 import CollegeTutors from './Components/student/collegetutors.js';
 import TutorList from './Components/student/tutors.js';
 import StudentProfile from './Components/student/profiletudent.js';
-import BookTutor from './Components/student/booktutor.js';
+import BookTutor from './Components/student/bookTutor.js';
 import ManageStudent from './Components/admin/manageStudent.js';
 import ManageTutor from './Components/admin/manageTutor.js';
 import ManageCollege from './Components/admin/manageCollege.js';
