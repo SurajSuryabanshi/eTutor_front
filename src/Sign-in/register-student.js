@@ -53,7 +53,7 @@ function RegisterStudent() {
       submissionData.append('profilePicture', formData.profilePic);
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/student/register', submissionData, {
+      const response = await axios.post('https://etutor-back.onrender.com/api/student/register', submissionData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
