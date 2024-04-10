@@ -105,7 +105,7 @@ const UserProfile = () => {
         <form onSubmit={handleSubmit} style={{ width: '50%', marginRight: '20 ' }}>
           <div className="profile-picture-container">
             {/* Display default profile picture if no picture is available */}
-            <img src={profile.profilePicture || default_student_pic} alt="Profile" className="profile-picture" />
+            <img src={default_student_pic} alt="Profile" className="profile-picture" />
             <input type="file" accept="image/*" onChange={handleImageChange} />
           </div>
           <label>
