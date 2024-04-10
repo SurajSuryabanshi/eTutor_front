@@ -115,7 +115,7 @@ const TutorProfile = () => {
         <u><h1 style={{ textAlign: 'center' }}>My Profile</h1></u>
         <form onSubmit={handleSubmit} style={{ width: '50%', marginRight: '20 ' }}>
                     <div className="profile-picture-container">
-            <img src={profile.profilePicture || default_tutor_pic} alt="Profile" className="profile-picture" />
+            <img src={default_tutor_pic} alt="Profile" className="profile-picture" />
             <input type="file" accept="image/*" onChange={handleImageChange} />
           </div>
           <label>
