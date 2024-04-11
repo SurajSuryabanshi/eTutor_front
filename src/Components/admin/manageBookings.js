@@ -93,8 +93,11 @@ const ManageBookings = () => {
             {bookings.map(booking => (
               <tr key={booking._id}>
                 <td style={{ border: '1px solid black', padding: '8px' }}>{booking._id}</td>
-                <td style={{ border: '1px solid black', padding: '8px' }}>{`${booking.student.firstName} ${booking.student.lastName}`}</td>
-                <td style={{ border: '1px solid black', padding: '8px' }}>{`${booking.tutor.firstName} ${booking.tutor.lastName}`}</td>
+                <td style={{ border: '1px solid black', padding: '8px' }}>
+           {booking.student ? `${booking.student.firstName} ${booking.student.lastName}` : 'Student Not Available'}</td>
+          <td style={{ border: '1px solid black', padding: '8px' }}>
+            {booking.tutor ? `${booking.tutor.firstName} ${booking.tutor.lastName}` : 'Tutor Not Available'}
+          </td>
                 <td style={{ border: '1px solid black', padding: '8px' }}>{booking.sessionDate}</td>
                 <td style={{ border: '1px solid black', padding: '8px' }}>{booking.sessionLength}</td>
                 <td style={{ border: '1px solid black', padding: '8px' }}>{booking.startTime}</td>
