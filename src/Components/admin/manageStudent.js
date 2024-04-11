@@ -134,7 +134,7 @@ const ManageStudent = () => {
       if (formData.profilePic) {
         submissionData.append('profilePicture', formData.profilePic);
       }
-      await axios.post('http://localhost:5000/api/student/register', submissionData, {
+      await axios.post('https://etutor-back.onrender.com/api/student/register', submissionData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
